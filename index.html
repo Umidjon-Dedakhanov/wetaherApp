@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wetaher App</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <div class="main_container">
+        <nav>
+            <h4>Weather</h4>
+            <form id="form">
+                <input id="inp" type="text" placeholder="Search for cities">
+            </form>
+        </nav>
+
+        <div class="main_info">
+            <div class="text">
+                <h3 id="country"></h3>
+                <h2 style="margin-right: 10px;" id="temp"></h2>
+            </div>
+           <img style="margin-top: 5.5%; margin-left: -20px;" id="icon" src="" alt="">
+        </div>
+
+        <div class="weather_details">
+            <div class="detail_box">
+                <div class="text">
+                    <p>Wind</p>
+                    <h5 id="wind"></h5>
+                </div>
+                <i class="fas fa-wind"></i>
+            </div>
+            <div class="detail_box">
+                <div class="text">
+                    <p>Pressure</p>
+                    <h5 id="pressure">1024 mb</h5>
+                </div>
+                <i class="fa-solid fa-arrow-down-up-across-line"></i>
+            </div>
+            <div class="detail_box">
+                <div class="text">
+                    <p>Humidity</p>
+                    <h5 id="humidity">21 %</h5>
+                </div>
+                <i class="fa-solid fa-droplet"></i>
+            </div>
+            <div class="detail_box">
+                <div class="text">
+                    <p>Visibility</p>
+                    <h5 id="visibility">14 km</h5>
+                </div>
+                <i class="fas fa-eye"></i>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./app.js"></script>
+</body>
+</html>
